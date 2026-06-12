@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predictions</title>
+</head>
+<body>
+    <h1>Predictions Using Flask</h1>
+    <form method="POST" action="/predict">
+        <input type="submit" value="Fetch Data and Make Predictions">
+    </form>
+    {% if prediction_message %}
+    <p>{{ prediction_message }}</p>
+    {% endif %}
+</body>
+
+</html>
